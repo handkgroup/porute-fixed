@@ -1,0 +1,994 @@
+html, body {
+  overflow-x: hidden;
+}
+
+@charset "EUC-JP";
+
+/* フォント基本設定 */
+h1 {
+color: white;
+}
+
+h2 {
+color: white;
+font-size: 36px;
+}
+
+h3 {
+color: white;
+}
+
+h4 {
+color: white;
+}
+
+p {
+color: white;
+font-size: 16px;
+}
+/* フォント基本設定 */
+
+/* FVコンテンツ */
+.fv-section {
+  background: linear-gradient(
+    to bottom,
+    #055194,
+    #132a63,
+    #0c193b,
+    #0c122f,
+    #191919,
+    #191919
+  );
+}
+
+.fv-section-group{
+  background-image: url(../img/lp01/fv_background.png);
+  background-size: cover; /* 背景画像が要素全体を覆うようにする */
+  background-position: center; /* 背景画像を中央に配置 */
+}
+
+.fv-section-top-person {
+display: flex;
+justify-content: center; /* 横方向の中央揃え */
+}
+
+.fv-section-special {
+display: flex;
+justify-content: center; /* 横方向の中央揃え */
+padding: 80px 0;
+}
+
+.fv-section-special img{
+  width: 50%;
+}
+
+.fv-section-top {
+position: relative;
+}
+
+.fv-section-top-text {
+position: absolute;
+top: 25%;
+left: 30%;
+width: 60%;
+}
+
+.fv-section-top-text-1 {
+font-size: 21px;
+margin-bottom: 0;
+}
+.fv-section-top-text-2 {
+font-size: 38px;
+margin-top: 0;
+}
+/* FVコンテンツ */
+
+/* メディア掲載コンテンツ */
+.fv-section-media {
+padding: 30px 0;
+margin:110px 0px;
+background-image: url(../img/lp01/media.png);
+}
+
+.fv-section-media-title-wrapper {
+display: flex; /* 横並びにする */
+align-items: center; /* 縦方向に中央揃え */
+justify-content: center; /* 全体を中央揃え */
+gap: 10px; /* テキストと横線の間にスペースを追加 */
+}
+
+.fv-section-media-title-wrapper::before,
+.fv-section-media-title-wrapper::after {
+content: ""; /* 擬似要素にコンテンツを設定 */
+flex: 0.21; /* 横線を均等に伸ばす */
+height: 2px; /* 横線の高さ */
+background-color: white; /* 横線の色 */
+}
+
+.fv-section-media-title {
+white-space: nowrap; /* テキストの折り返しを防ぐ */
+}
+
+.fv-section-media-text {
+display: flex; /* 子要素を横並びにする */
+justify-content: center; /* 子要素全体を中央揃え */
+align-items: center; /* 縦方向も中央揃え */
+gap: 80px; /* テキスト間のスペースを調整 */
+padding: 40px 0;
+}
+
+.fv-section-media-text p {
+margin: 0; /* デフォルトの余白を削除 */
+position: relative; /* 擬似要素配置のため */
+font-size:24px;
+}
+
+.fv-section-media-text p:not(:last-child)::after {
+content: "|"; /* 縦線を表示 */
+position: absolute;
+right: -40px; /* 縦線の位置を調整 */
+top: 50%;
+transform: translateY(-50%);
+color: #ffffff; /* 縦線の色 */
+font-size: 16px; /* 必要に応じて調整 */
+opacity: 39%;
+}
+/* メディア掲載コンテンツ */
+
+/* anker section */
+.fv-anker-section {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 30px 0 60px 0;
+width:80%;
+margin:0 auto;
+}
+
+.anker-item {
+font-family: Inter;
+font-weight: 400;
+line-height: 16.94px;
+text-transform: uppercase;
+text-align: center;
+}
+
+.anker-item p{
+  font-size: 14px;
+}
+
+.anker-item-box {
+  transition: all 0.3s ease; /* アニメーションを適用 */
+  padding: 0 24px;
+}
+
+.anker-item-box:hover {
+  border-bottom: 4px solid white; /* ホバー時の下線 */
+}
+
+/* anker section ends */
+
+/* about section */
+.about-section {
+background-image: url(../img/lp01/about-bg.png);
+background-size: cover; /* 背景画像が要素全体を覆うようにする */
+ background-position: center; /* 背景画像を中央に配置 */
+background-position: center;
+background-size: cover;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 58px;
+border: 1px solid #000000
+}
+
+.about-section-title {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+}
+
+.about-section-title h2 {
+font-family: YuGothic;
+font-size: 36px;
+font-weight: 700;
+line-height: 54px;
+}
+
+.about-section-title img{
+  width: 16%;
+}
+
+.about-section-text-top {
+font-family: YuGothic;
+font-size: 24px;
+font-weight: 700;
+line-height: 48px;
+}
+
+.about-section-text-middle {
+  font-family: YuGothic;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  padding: 35px 0 21px;
+}
+
+.about-section-text-bottom {
+  font-family: YuGothic;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+/* about section ends  */
+
+/* solution section  */
+.solution-lineup-wrapper{
+  background-image: url(../img/lp01/fv_background.png), linear-gradient(to bottom, #191919, #191919,  #0C122F, #0C193B, #132A63, #055194);
+}
+
+.solution-section {
+  padding: 66px 0 0;
+  text-align: center;
+}
+
+.right-aligned-title {
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43.57px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.right-aligned-title span {
+  font-family: YuGothic;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  margin: 0;
+}
+
+.solution-section-title p {
+  font-family: YuGothic;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  padding: 26px 0 37px;
+}
+  
+
+.solution-cards {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.solution-card {
+  flex: 1 1 25%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.solution-card p {
+  font-family: YuGothic;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.solution-card1 {
+  background: url('../img/lp01/solution1.png') no-repeat center/cover;
+}
+
+.solution-card2 {
+  background: url('../img/lp01/solution2.png') no-repeat center/cover;
+}
+
+.solution-card3 {
+  background: url('../img/lp01/solution3.png') no-repeat center/cover;
+}
+
+.solution-card4 {
+  background: url('../img/lp01/solution4.png') no-repeat center/cover;
+}
+
+/* Full-Screen Hovered Cards */
+.solution-card-hovered {
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+  width: 100%; 
+  height: 50vh;
+  z-index: -1; 
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  font-family: YuGothic;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none !;
+}
+
+.solution-card-hovered p {
+  font-family: YuGothic;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  text-decoration: none;
+}
+
+.porute-btn {
+  position: relative;
+  padding: 10px 40px;
+  width: 85px;
+  font-family: YuGothic;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+
+.porute-btn::before {
+  position: absolute;
+  content: '';
+  width: 29px;
+  height: 29px;
+  background-image: url(../img/top/more-button.png);
+  background-size: cover;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  text-decoration: none;
+}
+
+.porute-btn::after {
+  position: absolute;
+  content: '';
+  width: 5px;
+  height: 10px;
+  background-image: url(../img/top/arrow-white.png);
+  background-size: cover;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+
+.porute-btn:hover {
+  border: 2px solid #fff;
+  border-radius: 30px;
+}
+
+.porute-btn:hover::before {
+  display: none;
+}
+/* Individual Hovered Backgrounds */
+.solution-card1-hovered {
+  background: url('../img/lp01/solution1_hovered.png') no-repeat center/cover;
+}
+
+.solution-card2-hovered {
+  background: url('../img/lp01/solution2_hovered.png') no-repeat center/cover;
+}
+
+.solution-card3-hovered {
+  background: url('../img/lp01/solution3_hovered.png') no-repeat center/cover;
+}
+
+.solution-card4-hovered {
+  background: url('../img/lp01/solution4_hovered.png') no-repeat center/cover;
+}
+
+/* Hover State for Full-Screen Card */
+.solution-card:hover + .solution-card-hovered,
+.solution-card-hovered:hover {
+  z-index: 10; /* Bring to the top */
+  opacity: 1; /* Make visible */
+  pointer-events: all; /* Enable interaction */
+  text-decoration: none;
+}
+
+/* solution section ends */
+
+/* line up section */
+
+.lineup-section {
+  text-align: center;
+  background-image: url(../img/lp01/fv_background.png), linear-gradient(to bottom,
+    #055194,
+    #132a63,
+    #0c193b,
+    #0c122f,
+    #191919,
+    #191919
+  );
+  padding:100px 0 16px;
+}
+
+.lineup-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+
+.lineup-card-wrapper {
+  display: contents; /* Allows grid placement of children */
+}
+
+.lineup-card {
+  background: url('../img/lp01/lineupbg.png'), #000 no-repeat center / cover;
+  height: 455px;
+  position: relative;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.lineup-card:nth-child(2n) {
+  background-position: -10px -40px; 
+}
+
+.lineup-card:nth-of-type(odd)::after {
+  content: '';
+  width: 1px;
+  height: 40px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+.lineup-card:nth-child(2n) {
+  grid-row: span 1;
+  transform: translateY(40px); 
+}
+
+.lineup-card img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lineup-card1 img{
+  width: unset;
+  height: unset;
+}
+
+.lineup-card2 img{
+  transform: translateX(0%);
+}
+
+.lineup-card3 img{
+  width: unset;
+  height: unset;
+}
+
+.lineup-card4 img{
+  transform: translateX(0%);
+}
+
+.lineup-card5 img{
+  width: unset;
+  height: unset;
+}
+
+.lineup-card6 img{
+  transform: translate(0%,10%)
+}
+
+.lineup-card7 img{
+  width: unset;
+  height: unset;
+}
+
+.lineup-card8 img{
+  transform: translateX(0%);
+}
+
+.lineup-card9 img{
+  width: unset;
+  height: unset;
+}
+
+.lineup-card h3 {
+  font-family: YuGothic;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  z-index: 1; 
+}
+
+.lineup-card p {
+  width: 400px;
+  font-family: YuGothic;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  padding: 18px 0 32px;
+  z-index: 1; 
+}
+
+.lineup-card:hover {
+  text-decoration: none;
+}
+
+/* line up section ends */
+
+/* feature section */
+
+.feature-section {
+  background: linear-gradient(
+    to bottom,
+    #055194,
+    #132a63,
+    #0c193b,
+    #0c122f,
+    #191919,
+    #191919
+  );
+  text-align: center;
+  padding: 166px 0 0;
+}
+
+.feature-card {
+  border-top: 1px solid #FFFFFF;
+  padding: 60px 0 60px;
+}
+
+.feature-card-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 134px;
+}
+
+.feature-card-text {
+  text-align: left;
+  width: 50%;
+  max-width: 517px;
+}
+
+.feature-card-text p{
+  font-size:20px;
+}
+
+.feature-card-text span{
+  font-family: Inter;
+  font-size: 77px;
+  font-weight: 400;
+  line-height: 93.19px;
+  color: #fff;
+  opacity: 15.39%;
+}
+
+.feature-card-text h3 {
+  font-family: YuGothic;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 46px;
+  padding: 14.91px 0 39px;
+  margin: 0;
+}
+
+.feature-card-text-bottom {
+  display: flex;
+  align-items: center;
+  gap: 47.75px;
+}
+
+.feature-card-text-bottom p{
+  font-size:20px;
+}
+
+.featuere-card-middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-subtext {
+  font-family: YuGothic;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.feature-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 23.5px;
+  margin-bottom: 20px;
+}
+
+.feature-bottom-inner {
+  position: relative;
+  display: inline-block;
+  padding: 20px 104.94px;
+}
+
+.feature-bottom-inner p{
+  font-family: YuGothic;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 46px;
+}
+
+.feature-bottom-inner img {
+  position: absolute;
+}
+
+.feature-bottom-inner img:nth-of-type(1) {
+  top: 0;
+  left: 0;
+}
+
+.feature-bottom-inner img:nth-of-type(2) {
+  top: 0;
+  right: 0;
+}
+
+.feature-bottom-inner img:nth-of-type(3) {
+  bottom: 0;
+  left: 0;
+}
+.feature-bottom-inner img:nth-of-type(4) {
+  right: 0;
+  bottom: 0;
+}
+
+.feature-bottom-text{
+  font-family: YuGothic;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-top: 56px;
+}
+/* feature section ends */
+
+/* ~~~ */
+.aftersize-section{
+background-image: url(../img/lp01/net.png), linear-gradient(to bottom, #191919, #191919,  #0C122F, #0C193B, #132A63, #055194);
+background-size: cover; /* 背景画像が要素全体を覆うようにする */
+background-position: center; /* 背景画像を中央に配置 */
+padding: 50px 0;
+}
+
+/* ご利用例コンテンツ */
+.usecase-section {
+padding: 66px 0 121px;
+text-align: center;
+}
+
+.usecase-cards {
+display: flex;
+align-items: center;
+position: relative;
+}
+
+.usecase-card {
+  flex: 1 1 25%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.usecase-card p {
+  font-family: YuGothic;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.usecase-card1 {
+background: url('../img/lp01/usecase1.png') no-repeat center/cover;
+}
+
+.usecase-card2 {
+background: url('../img/lp01/usecase2.png') no-repeat center/cover;
+}
+
+.usecase-card3 {
+background: url('../img/lp01/usecase3.png') no-repeat center/cover;
+}
+
+.usecase-card4 {
+background: url('../img/lp01/usecase4.png') no-repeat center/cover;
+}
+
+.usecase-card-hovered {
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+  width: 100%; 
+  height: 50vh;
+  z-index: -1; 
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  font-family: YuGothic;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none !;
+}
+
+.usecase-card-hovered p {
+  font-family: YuGothic;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  text-decoration: none;
+}
+
+/* Individual Hovered Backgrounds */
+.usecase-card1-hovered {
+  background: url('../img/lp01/usecase1_hovered.png') no-repeat center/cover;
+}
+
+.usecase-card2-hovered {
+  background: url('../img/lp01/usecase2_hovered.png') no-repeat center/cover;
+}
+
+.usecase-card3-hovered {
+  background: url('../img/lp01/usecase3_hovered.png') no-repeat center/cover;
+}
+
+.usecase-card4-hovered {
+  background: url('../img/lp01/usecase4_hovered.png') no-repeat center/cover;
+}
+
+/* Hover State for Full-Screen Card */
+.usecase-card:hover + .usecase-card-hovered,
+.usecase-card-hovered:hover {
+  z-index: 10; /* Bring to the top */
+  opacity: 1; /* Make visible */
+  pointer-events: all; /* Enable interaction */
+  text-decoration: none;
+}
+
+/* solution section ends */
+/* ご利用例コンテンツ */
+
+/* サイズ表コンテンツ */
+.aftersize-section-chart-whitebox{
+background-color: white;
+padding:40px;
+display: flex;
+gap:40px;
+width: 70%;
+margin:0 auto;
+align-items: center;
+}
+
+.aftersize-section-chart-whitebox-left{
+width: 100%;
+}
+
+.aftersize-section-chart-whitebox-left-title p{
+color: black;
+font-size: 20px;
+font-weight: bold;
+margin-top:24px;
+margin-bottom:16px;
+}
+
+.aftersize-section-chart-whitebox-left table{
+width:100%;
+}
+
+.aftersize-section-chart-whitebox-left th{
+border-top: 1px solid #DEDEDE;
+border-bottom: 1px solid #DEDEDE;
+width:20%;
+padding:4px 0;
+text-align: center;
+color:#10214E;
+}
+
+.aftersize-section-chart-whitebox-left td{
+border-bottom: 1px solid #DEDEDE;
+width:20%;
+padding:4px 0;
+text-align: center;
+font-size:13px;
+color:#10214E;
+}
+
+.aftersize-section-chart-whitebox-right{
+width: 100%;
+}
+
+.aftersize-section-chart-whitebox-right-images{
+display: flex;
+gap: 40px;
+}
+
+.aftersize-section-chart-whitebox-right-jacket img{
+height: 160px;
+}
+
+.aftersize-section-chart-whitebox-right-saropet img{
+height: 160px;
+}
+
+.aftersize-section-chart-whitebox-right-textbox-title{
+font-size:20px;
+font-weight: bold;
+margin:16px 0;
+}
+
+.aftersize-section-chart-whitebox-right-saropet-textbox-title{
+font-size:20px;
+font-weight: bold;
+margin-top:32px;
+margin-bottom:16px;
+}
+
+.aftersize-section-chart-whitebox-right-size{
+margin-top: 40px;
+}
+/* サイズ表コンテンツ */
+
+/* 使用上の注意！コンテンツ */
+.aftersize-section-caution{
+margin: 160px auto;
+width:70%;
+padding: 80px 0;
+border: 1px solid white;
+}
+.aftersize-section-caution-textbox{
+width:80%;
+margin:0 auto;
+text-align: center;
+}
+.aftersize-section-caution-textbox-text1{
+font-size: 24px;
+width:60%;
+margin:0 auto;
+}
+
+.aftersize-section-caution-textbox-text2{
+margin-top: 40px;
+text-align: left;
+font-family: YuGothic;
+font-size: 16px;
+font-weight: 500;
+line-height: 26px;
+
+}
+/* 使用上の注意！コンテンツ */
+
+/* お客様の声コンテンツ */
+.aftersize-section-voice-cardlist{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+grid-column-gap: 32px;
+grid-row-gap: 32px;
+width:90%;
+margin: 0 auto;
+}
+.aftersize-section-voice-cardlist-card{
+padding: 40px;
+min-height: 324px;
+background-repeat: no-repeat;
+background-position: bottom;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.aftersize-section-voice-cardlist-card-title{
+font-size:20px;
+}
+
+.aftersize-section-voice-cardlist-card-text{
+margin: 24px 0 60px;
+}
+
+.aftersize-section-voice-cardlist-card1{
+background-image: url(../img/lp01/user1.png), linear-gradient(to bottom, #0E1D44, #0E1D44);
+}
+
+.aftersize-section-voice-cardlist-card2{
+background-image: url(../img/lp01/user2.png), linear-gradient(to bottom, #0E1D44, #0E1D44);
+}
+
+.aftersize-section-voice-cardlist-card3{
+background-image: url(../img/lp01/uesr3.png), linear-gradient(to bottom, #0E1D44, #0E1D44);
+}
+
+.aftersize-section-voice-cardlist-card4{
+background-image: url(../img/lp01/user4.png), linear-gradient(to bottom, #0E1D44, #0E1D44);
+}
+/* お客様の声コンテンツ */
+
+/* FAQコンテンツ */
+.aftersize-section-qanda{
+padding: 80px 10px;
+border: 1px solid white;
+width: 60%;
+margin: 160px auto;
+}
+
+.h2-entitle{
+margin: 0;
+text-align: center;
+}
+
+.h2-jptitle{
+text-align: center;
+margin-bottom:40px;
+}
+
+.aftersize-section-qanda-box{
+margin: 0 auto;
+width:80%;
+}
+
+.aftersize-section-qanda-box-qa{
+border-bottom: 1px solid white;
+}
+
+.aftersize-section-qanda-box-question{
+text-align: left;
+font-size: 20px;
+font-weight: bold;
+margin-top:32px;
+}
+
+.aftersize-section-qanda-box-answer-q{
+padding-right: 8px;
+}
+
+.aftersize-section-qanda-box-answer{
+text-align: left;
+margin-bottom: 16px;
+}
+
+.aftersize-section-qanda-box-answer-a{
+font-size: 20px;
+padding-right: 12px;
+}
+/* FAQコンテンツ */
+
+.c-bottom-item p{
+  color:black;
+}
+
+  .c-bottom-item-title{
+    color:black;
+}

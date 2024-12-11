@@ -1963,12 +1963,12 @@ p {
   flex-direction: row-reverse;
 }
 
-.lineupcard-text {
+.lineupcard_lp3-text {
   text-align: left;
   max-width: 387px;
 }
 
-.lineupcard-text h3 {
+.lineupcard_lp3-text h3 {
   font-family: YuGothic;
   font-size: 32px;
   font-weight: 700;
@@ -1976,7 +1976,7 @@ p {
   color: #000;
 }
 
-.lineupcard-text p {
+.lineupcard_lp3-text p {
   font-family: YuGothic;
   font-size: 16px;
   font-weight: 500;
@@ -1984,22 +1984,22 @@ p {
   margin-bottom: 48px;
   color: #000;
 }
-.lineupcard-text-container > img {
+.lineupcard-_lp3text-container > img {
   max-height: 400px;
   width: auto;
 }
 
-.lineupcard-text-container:hover {
+.lineupcard_lp3-text-container:hover {
   opacity: 1;
 }
 
-.lineupcard-text-container:hover .porute-btn {
-  border: 2px solid #fff;
+.lineupcard_lp3-text-container:hover .porute-btn {
   border-radius: 30px;
   text-decoration: none;
+  border: 2px solid #000;
 }
 
-.lineupcard-text-container:hover .porute-btn::before {
+.lineupcard_lp3-text-container:hover .porute-btn::before {
   display: none;
 }
 

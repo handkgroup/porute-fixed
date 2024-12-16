@@ -1117,6 +1117,10 @@ p {
 
 /* fv section */
 
+.fv-section2-sp {
+  display: none;
+}
+
 .fv-section2 {
   background: url(../img/lp02/fv_bg.png) no-repeat center/cover;
 }
@@ -1841,6 +1845,10 @@ p {
 
 /* about section 3 */
 /* about section */
+
+.about-section3_sp {
+  display: none;
+}
 
 .about-section3 {
   background: url("../img/lp03/about_bg.png") no-repeat left top;

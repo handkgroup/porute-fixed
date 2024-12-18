@@ -511,7 +511,7 @@
   }
   .featurecard5 iframe {
     width: 90%;
-    height: 400px;
+    height: 187px;
   }
   .fv-section3 {
     height: 100vh;
@@ -597,7 +597,7 @@
   }
   .featurecard_lp3 iframe {
     width: 100%;
-    height: 400px;
+    height: 187px;
   }
 }
 
@@ -1066,9 +1066,6 @@
   .lp03-wrapper {
     padding: 90px 0 0;
   }
-  .fv-section3 {
-    height: 70vh;
-  }
   .fv-section3-inner {
     max-width: 95%;
     padding: 150px 0 0;
@@ -1116,6 +1113,10 @@
     p {
       font-size: 16px;
     }
+  }
+  .solution-section3 .solution-card p {
+    font-size: 16px;
+    
   }
   .lineup-section3 {
     padding: 64px 0 80px;

@@ -127,30 +127,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Update left arrow visibility
     if (scrollLeft === 0) {
-      leftLight.style.display = "none";
-      leftDark.style.display = "block";
-    } else {
       leftLight.style.display = "block";
       leftDark.style.display = "none";
+    } else {
+      leftLight.style.display = "none";
+      leftDark.style.display = "block";
     }
 
     // Update right arrow visibility
     if (scrollLeft >= maxScrollLeft) {
-      rightLight.style.display = "none";
-      rightDark.style.display = "block";
-    } else {
       rightLight.style.display = "block";
       rightDark.style.display = "none";
+    } else {
+      rightLight.style.display = "none";
+      rightDark.style.display = "block";
     }
   };
 
   // Scroll left on arrow click
-  leftLight.addEventListener("click", () => {
+  leftDark.addEventListener("click", () => {
     tableImg.scrollBy({ left: -scrollStep, behavior: "smooth" });
   });
 
   // Scroll right on arrow click
-  rightLight.addEventListener("click", () => {
+  rightDark.addEventListener("click", () => {
     tableImg.scrollBy({ left: scrollStep, behavior: "smooth" });
   });
 
